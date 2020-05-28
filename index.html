@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>MonaCoin.JP</title>
+<style>
+body {
+background-color: #d9d4d4;
+}
+</style>
+</head>
+<body>
+<p>ウォレットサービスを停止しました。<br>
+当サイトをご利用したときに秘密鍵をエクスポートしておらず、ウォレットにあるコインが送信できなくてお困りの方は下記までお問い合わせください。</p>
+<p>The wallet service has been stopped.<br>
+If you used without exporting secret keys and you cannot send coins in your wallet, please contact the following email.</p>
+<canvas id="canvas"></canvas>
+<script>
+var ctx = document.getElementById('canvas').getContext('2d');
+ctx.font = '14px serif';
+var n = 'recovery';
+var d = 'monacoin.jp';
+var t = n + '&&' + d;
+ctx.fillText(t.replace('y&&m', 'y@m'), 0, 20);
+</script>
+</body>
+</html>
